@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://127.0.0.1:5500/Html%20Forms1.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta http-equiv="X-UA-Compatile" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MyWebpages</title>
+    <style>
+        h3{
+    border-style: inset;
+    margin-left:-0%;
+    margin-right:0%;
+    text-align: center;
+    padding-top:0.5cm;
+    padding-left: 0.5cm;
+    padding-right:0.5cm;
+    padding-bottom: 0.5cm;
+    border-radius:50%;
+    border-top-color:chartreuse;
+    border-left-color: chartreuse;
+    border-top-width: 0.5ch;
+    border-left-width: 0.4ch;
+    border-right-color: rgb(240, 16, 240);
+    border-bottom-width: 1ch;
+    border-right-width: 0.7ch;
+    border-bottom-color: fuchsia;
+    color: dodgerblue;
+        }
+
+    
+    .google{border-style:inset;
+            
+            margin: 3px 500px;
+            padding-left: 1.5cm;
+           padding-top: 1cm;
+           padding-right: 1cm;
+           padding-bottom: 1cm;
+           border-width:0.3ch;
+           border-bottom-width: 0.5ch;
+           border-right-width: 0.5ch;
+        
+           border-color:rgb(98, 243, 15);
+           border-radius: 1cm;
+           }
+        
+    
+    
+ 
+h4{
+    color: dodgerblue;
+}
+    </style>
+    </head>
+        <body>
+            <form>
+                
+
+                <fieldset><a href="https://www.google.com/" target="blank" title="GOOGLE"><h1 class="google" style="background-color: rgb(248, 237, 244)" ;=""><font color="blue">G</font><font color="red">O</font><font color="orange">O</font><font color="blue">G</font><font color="green">L</font><font color="red">E</font></h1></a></fieldset>
+
+             <fieldset>
+
+                <legend><h3 style="color: rgb(236, 9, 9);">Personal Details</h3></legend>
+                    <p>
+                        <label></label></p><h4 style="color: dodgerblue;">Salutation:-</h4>
+
+                        <select name="salutation">
+
+                            <option>--None--</option>
+                            <option>Mr.</option>
+                            <option>Ms.</option>
+                            <option>Mrs.</option>
+                            <option>Dr.</option>
+                            <option>Prof.</option>
+                                                
+                        </select>
+                    
+                    <p></p>
+            <p>
+                <label></label></p><h4>First name:-</h4><input type="text">
+            <p></p>
+
+            <p>
+                <label></label></p><h4>Last name:-</h4><input type="text">
+            <p></p>
+
+            <p>
+                </p><h4>Gender:-</h4>
+               <label><input type="radio" name="gender" value="Male">Male</label>
+               <label><input type="radio" name="gender" value="Female">Female</label>
+               <label><input type="radio" name="gender" value="others">Others</label>
+            <p></p>
+         
+            <p>
+                <label></label></p><h4>Email:-</h4><input type="email" name="email">
+            <p></p>
+
+            <p>
+                <label></label></p><h4>Date of birth:-</h4><input type="date" name="birthDate">
+            <p></p>
+
+            <p>
+                <label>
+                   </label></p><h4> Address :-</h4>
+                   <textarea name="address" cols="50" rows="3"></textarea>
+
+                
+            <p></p>
+
+            <p>
+                <button type="submit"><b><font color="red" size="4">SUBMIT</font></b></button>
+            </p>
+            
+            
+        
+        <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</fieldset></form></body></html>
